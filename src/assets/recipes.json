@@ -1,0 +1,22 @@
+[
+    {
+              "recipeID": 1,
+              "recipeName": "Duck Soup",
+              "description": "Chinese noodle soup with roasted duck.",
+              "servings": 2,
+              "timings": "40 mins",
+              "calories": "500kcals",
+              "starRating": 5,
+              "imageUrl": "https://hungryharpist.files.wordpress.com/2014/04/img_2844.jpg?w=300&h=200"
+          },
+          {
+              "recipeID": 2,
+              "recipeName": "Carrot Lasagne",
+              "description": "Healthy vegetarian lasagne with carrots and cottage cheese.",
+              "servings": 6,
+              "timings": "1 hour 30 mins",
+              "calories": "550kcals",
+              "starRating": 4.2,
+              "imageUrl": "https://cdn.shopify.com/s/files/1/0923/4326/files/Sweet_Potato_Lasagna_large.jpg?17021713663083417441"
+          }
+]
