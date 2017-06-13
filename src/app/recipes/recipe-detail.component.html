@@ -1,0 +1,55 @@
+<div class='panel panel-primary' *ngIf='recipe'>
+    <div class='panel-heading' style='font-size:large'>
+        {{pageTitle + ': ' + recipe.recipeName}}
+    </div>
+
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='col-md-3'>Name:</div>
+                    <div class='col-md-6'>{{ recipe.recipeName }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Description:</div>
+                    <div class='col-md-6'>{{ recipe.description }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Servings:</div>
+                    <div class='col-md-6'>{{ recipe.servings }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Timing:</div>
+                    <div class='col-md-6'>{{ recipe.timings }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Calories:</div>
+                    <div class='col-md-6'>{{ recipe.calories }}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Star Rating:</div>
+                    <div class='col-md-6'>
+                        <sh-star [rating]='recipe.starRating'
+                                (ratingClicked)='onRatingClicked($event)'>
+                        </sh-star>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <img class='center-block img-responsive'
+                    [style.width.px]='200'
+                    [style.margin.px]='2'
+                    [src]='recipe.imageUrl'
+                    [title]='recipe.recipeName'>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+</div>
